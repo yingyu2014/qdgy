@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,th,td {
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1em;
+}
+div, p, dt, dd, li {
+	line-height: 1em;
+}
+ol,ul {
+	list-style: none;
+}
+
+select {
+	margin: 0;
+	padding: 0;
+}
+table {
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+th, caption, dt {
+	font-weight: bold;
+}
+dt, th, td{
+	text-align: left;
+}
+img {
+	border: none;
+}
+address, em {
+	font-style: normal;
+}
+hr {
+	margin: 0;
+	padding: 0;
+	display: none;
+	clear: both;
+}
+a {
+	text-decoration: none;
+	outline: none;
+}
+figure, figcaption {
+	margin: 0;
+	padding: 0;
+}
+sup {
+	vertical-align: text-top;
+}
+
+/*---for new HTML5 elements---*/
+
+section,
+article,
+aside,
+hgroup,
+header,
+footer,
+nav,
+figure,
+figcaption,
+summary {
+	display: block;
+}

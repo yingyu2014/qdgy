@@ -1,0 +1,485 @@
+
+
+/* -------------------------------------------------------------------
+
+	01. Base Style
+	
+-------------------------------------------------------------------- */
+
+/* reset
+=========================================== */
+
+html,body,
+div,span,
+object,iframe,
+h1,h2,h3,h4,h5,h6,
+p,blockquote,pre,
+a,abbr,acronym,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,strong,sub,sup,tt,var,
+ul,ol,li,dl,dt,dd,
+form,fieldset,legend,label,
+table,caption,tbody,tfoot,thead,tr,th,td,
+header,nav,footer{
+margin:0;
+padding:0;
+font-size:100%;
+font-weight:normal;
+}
+
+body{
+min-width:960px;
+font-family: arial, sans-serif;
+font-size:12px;
+line-height:1.7;
+color:#666;
+-webkit-text-size-adjust:none;
+}
+
+ul, ol{
+list-style:none;
+}
+
+table{
+border-collapse:collapse;
+border-spacing:0;
+}
+
+img{
+border:0;
+vertical-align:bottom;
+line-height:1;
+}
+
+em, strong{
+font-style:none;
+}
+
+a{color:#444141; text-decoration:none; }
+a:hover, a:active{ text-decoration:underline; }
+a:active, a:focus{ outline:none; }
+a.roll:hover img{
+opacity:0.75;
+filter:alpha(opacity=75);
+-ms-filter:"alpha(opacity=75)";
+}
+
+
+
+/*module CSS*/
+#container, .navWrap, .footerWrap{
+	width:960px;
+	margin:0 auto;
+}
+
+.clearfix:after{
+	clear:both;
+	content:".";
+	display:block;
+	height:0;
+	line-height:0;
+	visibility:hidden
+}
+
+.hide{
+	display:none
+}
+
+
+button,a.button{
+	width: 125px;
+	margin: 0 auto;
+	padding:10px 9px;
+	display:block;
+	background:#9bb70d;
+	border:none;
+	border-radius:4px;
+	transition:background 0.2s ease-in-out;
+	color:#fff;
+	cursor:pointer;
+	font-size:12px;
+	font-weight: bold;
+	line-height:1;
+	text-align:center;
+}
+
+a.btn_detail{
+	margin: 0;
+}
+button:hover,a.button:hover{
+	background:#a3c10e;
+	text-decoration: none;
+}
+
+.orange{
+	color:#F90;
+}
+
+/* -------------------------------------------------------------------
+
+	02. Header
+	
+-------------------------------------------------------------------- */
+
+/*Header top-bar CSS*/
+.top-bar {
+	background:#eaeade;
+	position:relative;
+}
+.top-bar ul{
+	width: 960px;
+	margin:0 auto;
+	text-align:right;
+}
+.top-bar ul li{
+	margin-left: 30px !important;
+	height:42px;
+	display:inline-block;
+}
+.top-bar ul li a{
+	padding:13px 0;
+	display: block;	
+}
+
+/*Header navi-bar CSS*/
+#navi-bar{
+	width:960px;
+	margin:0 auto;
+	padding:20px 0;
+}
+#navi-bar #logo{
+	width:150px;
+	margin:10px 110px 0 0;
+	height:30px;
+	float:left;
+}
+#navi-bar ul{
+	padding-top:14px;
+}
+#navi-bar ul li{
+	margin:0 55px 0 0;
+	display:inline;
+	font-size: 1.2em;
+}
+
+#navi-bar ul li .current{
+	color:#9bb70c;
+}
+
+
+
+/* -------------------------------------------------------------------
+
+	03. Footer
+	
+-------------------------------------------------------------------- */
+
+footer, #footer-inner{
+width:100%;
+margin-top: 100px;
+background:#eaeade;
+}
+
+/* ---------------------------------------- */
+
+#sitemap-nav{
+margin:0 auto;
+padding-top:15px;
+width:940px;
+}
+
+#sitemap-nav dl{
+float:left;
+width:235px;
+}
+#sitemap-nav dl dt{
+display:table-cell;
+height:34px;
+vertical-align:middle;
+line-height:1;
+color:#333;
+font-size: 1.2em;
+font-weight:bold;
+}
+#sitemap-nav dl dd{
+padding:10px 0 20px;
+}
+
+#sitemap-nav dl dl{
+float:none;
+}
+#sitemap-nav dl dl dt{
+display:block;
+height:auto;
+font-family:RodinPro-DB;
+line-height:1.5;
+}
+#sitemap-nav dl dl dd{
+padding:3px 0 0;
+}
+
+/* ---------------------------------------- */
+
+#foot-nav{
+padding:20px 0;
+background-color:#fff;
+}
+
+#foot-nav ul{
+margin-bottom:15px;
+text-align:center;
+font-size:12px;
+}
+#foot-nav ul li{
+display:inline;
+padding:0 18px;
+border-left:1px solid #666;
+}
+#foot-nav ul li.first-child{
+border:none;
+}
+
+#foot-nav p{
+text-align:center;
+font-size:10px;
+}
+
+
+
+
+
+/* -------------------------------------------------------------------
+
+	04. Container
+	
+-------------------------------------------------------------------- */
+/* container 1column with side
+=========================================== */
+h1 {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+/* container 2column with side
+=========================================== */
+#container{
+position:relative;
+width:960px;
+}
+
+#side{
+position:absolute;
+top:16px;
+left:50%;
+margin-left:-485px;
+}
+
+#side-nav{
+	width:218px;
+	float:left;
+}
+#side-nav dt{
+	display:block;
+	width:218px;
+	height: 20px;
+	padding-top: 14px;
+	line-height:1;
+	font-size: 1.1em;
+	font-weight: bold;
+	color:#FFF;
+	text-align: center;
+	background:url(../common/img/nv_dt_bg.png) no-repeat center top;
+}
+#side-nav li a{
+	display:block;
+	padding:18px 24px;
+	width:170px;
+	background:url(../common/img/nv_bg_y.png) no-repeat left bottom;
+	line-height:1.2;
+	color:#333;
+	text-decoration:none;
+}
+#side-nav li.current a,
+#side-nav li a:hover{
+	background-position:-218px bottom;
+	color:#16a085;
+}
+#side-nav li.last-child a{
+	padding-bottom:24px;
+}
+#side-nav li.last-child.current a,
+#side-nav li.last-child a:hover{
+	background-position:-218px bottom;
+}
+
+.section {
+	float:right; 
+	width:700px; 
+	text-align:left !important;
+}
+.section h1 {
+	margin: 18px auto 25px auto;
+}
+.section p {
+	margin-bottom: 15px;
+}
+
+
+
+/* -------------------------------------------------------------------
+
+	05.Other 
+	
+-------------------------------------------------------------------- */
+
+/*Home
+--------------------------------------------------------------------*/
+#home #container h1 {
+	clear: both;
+	margin: 20px auto 40px auto;
+	text-align:center;
+}
+#home #container .process {
+	background-color:#E8E8E8;
+	border-radius:10px;
+  }
+#home #container .process ul {
+	padding: 10px 14px;
+}
+#home #container .process ul li{
+	width:216px;
+	padding: 8px;
+	float:left;
+	position:relative;
+	border-right:1px solid #ccc;
+	min-height:180px;
+}
+#home #container .process ul li.last{
+	border-right:none;
+}
+#home #container .process ul li p.number{
+	width:30px;
+	height:30px;
+	border-radius:15px;
+	background:#fff;
+	font:sans-serif bold #9bb70d;
+	font-size: 1.25em;
+	position:absolute;
+	text-align:center;	
+}
+#home #container .process ul li h2{
+	padding:2px 0 30px 40px;
+	font-size: 1.1em;
+	font-weight: bold;
+	color:#333;
+}
+#home #container .process ul li p.express{
+	text-align: center;
+	font-size: 1.1em;
+	color:#333;
+}
+#home #container table.contactInfo {
+	margin: 20px auto 0 auto;
+	clear: both;
+}
+#home #container table.contactInfo td {
+	padding-right: 8px;
+}
+
+#home #container .about {
+	margin: 20px 0 0 0;
+	padding-top: 20px;
+	border-top: solid 1px #E6E6E6
+}
+#home #container .about table td{
+	vertical-align: top;
+}
+#home #container .about ul li{
+	width:450px;
+	padding:0 15px;
+	float:left;
+	position:relative;
+}
+#home #container .about ul li.last{
+	border-right:none;
+}
+#home #container .about h2 {
+	margin-bottom: 15px;
+	font-size: 1.3em;
+	font-weight: bold;	
+}
+#home #container .about ul.bullets{
+	list-style:none;
+	margin-bottom:20px;
+}
+#home #container .about ul.bullets li{
+	margin:0 0 10px 0;
+	padding:0px 0 0 18px;
+	overflow:visible;
+	background:url(../common/img/icons.gif) 3px no-repeat;
+}
+#home #container .about ul.bullets li.last{
+	background:none;
+	padding-left: 0;
+}
+
+
+
+
+/*Translation
+--------------------------------------------------------------------*/
+
+#translation table.price {
+	width: 100%;
+	margin: 15px auto;
+	border: solid 1px #ccc;
+}
+#translation table.price td {
+	padding: 5px;
+	border: solid 1px #CCC;
+	text-align: center;
+}
+
+/*Contact  /*recruit/*Sitemap
+--------------------------------------------------------------------*/
+#contact table th {
+	padding-right: 10px;
+	font-weight: bold;
+}
+#contact .Map #Baidu-Map {
+	margin: 25px auto;
+}
+#contact .Map #Baidu-Map a {
+	color: #06F;
+}
+
+
+
+/*recruit
+--------------------------------------------------------------------*/
+#recruit table th {
+	margin: 5px auto;
+	padding-right: 10px;
+	font-weight: bold;
+}
+
+#recruit .note {
+	margin-top: 10px;
+}
+
+/*Sitemap
+--------------------------------------------------------------------*/
+body#sitemap .matrix h2 {
+	margin-top: 15px;
+	padding-bottom: 5px;
+	font-size: 14px;
+	border-bottom: solid 1px #CCC;
+}
+body#sitemap .matrix h2 a {
+	color:#9bb711;
+}
+body#sitemap .matrix ul {
+	margin:10px auto 25px auto;
+}
+body#sitemap .matrix ul li {
+	padding-right: 100px;
+	display: inline;
+}

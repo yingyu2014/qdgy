@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^qdgytrans.com$
+RewriteRule (.*) http://www.qdgytrans.com/$1 [R=301,L]
+
+# BEGIN WordPress
+
+# END WordPress

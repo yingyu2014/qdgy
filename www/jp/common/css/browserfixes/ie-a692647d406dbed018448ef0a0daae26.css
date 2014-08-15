@@ -1,0 +1,5 @@
+#calculator #file input[type=file]{border-left:100px solid #000;height:33px;margin-left:0;top:69px;width:183px}
+#calculator button:after{font-size:20px !important;top:10px !important}
+#pages.index .translator a span{font-size:24px !important;position:relative;top:2px}
+textarea.placeholder,input[type=text].placeholder,input[type=tel].placeholder,input[type=email].placeholder{color:#ccccbd}
+#orders.index tr.language-combination td .icon.arrow-small{margin-bottom:-4px !important}

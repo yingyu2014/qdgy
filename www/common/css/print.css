@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+/*　プリント設定　*/
+
+@media print {
+
+	body {
+		background: none !important;
+	}
+	* {
+		border-color: #000!important;
+		color: #000!important;
+		text-shadow: none!important;
+		box-shadow: none!important;
+	}
+	input[type], textarea {
+		border: none!important;
+	}
+
+}

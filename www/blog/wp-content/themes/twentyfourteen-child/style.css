@@ -1,0 +1,195 @@
+/*
+Theme Name: Twenty Fourteen Child
+Theme URI: http://qdgytrans.com/twentyfourteen-child
+Author: Yingyu Nan
+Author URI: http://qdgytrans.com/
+Description: Twenty Fourteen Child Theme
+Template:twentyfourteen
+Version: 1.0
+Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Text Domain: twentyfourteen-child 
+*/
+
+
+@import url("../twentyfourteen/style.css");
+
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+/**
+ * Table of Contents:
+ *
+ * 1.0 - Reset
+ * 2.0 - Repeatable Patterns
+ * 3.0 - Basic Structure
+ * 4.0 - Header
+ * 5.0 - Navigation
+ * 6.0 - Content
+ *   6.1 - Post Thumbnail
+ *   6.2 - Entry Header
+ *   6.3 - Entry Meta
+ *   6.4 - Entry Content
+ *   6.5 - Galleries
+ *   6.6 - Post Formats
+ *   6.7 - Post/Image/Paging Navigation
+ *   6.8 - Attachments
+ *   6.9 - Archives
+ *   6.10 - Contributor Page
+ *   6.11 - 404 Page
+ *   6.12 - Full-width
+ *   6.13 - Singular
+ *   6.14 - Comments
+ * 7.0 - Sidebar
+ *   7.1 - Widgets
+ *   7.2 - Content Sidebar Widgets
+ * 8.0 - Footer
+ * 9.0 - Featured Content
+ * 10.0 - Multisite
+ * 11.0 - Media Queries
+ * 12.0 - Print
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * 1.0 Reset
+ *
+ * Resetting and rebuilding styles have been helped along thanks to the fine
+ * work of Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+ * along with Nicolas Gallagher and Jonathan Neal
+ * http://necolas.github.com/normalize.css/ and Blueprint
+ * http://www.blueprintcss.org/
+ *
+ * -----------------------------------------------------------------------------
+ */
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	font-family: Tahoma, Arial, Helvetica, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	font-family: Tahoma, Arial, Helvetica, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif;
+}
+
+code,
+kbd,
+tt,
+var,
+samp,
+pre {
+	font-family: Tahoma, Arial, Helvetica, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif;
+}
+
+
+
+.site:before {
+background-color: #25706b;
+}
+.site-header {
+background-color: #25706b;
+}
+.site-footer {
+background-color: #25706b;
+}
+
+
+
+/*Featured content*/
+@media screen and (min-width: 783px) {
+	 .primary-navigation {
+		 float: right;
+		 margin-left: 20px;
+	        }
+		}
+.site {
+		margin: 0 auto;
+        }
+@media screen and (min-width: 1110px) {
+	.archive-header,
+	.comments-area,
+	.image-navigation,
+	.page-header,
+	.page-content,
+	.post-navigation,
+	.site-content .entry-header,
+	.site-content .entry-content,
+	.site-content .entry-summary,
+	.site-content footer.entry-meta {
+		padding-left: 55px;
+	        }
+        }
+
+
+
+.site-content .entry-header,
+.site-content .entry-content,
+.site-content .entry-summary,
+.site-content .entry-meta,
+.page-content {
+		max-width: 874px;
+        }
+.comments-area {
+		max-width: 874px;
+        }
+.post-navigation, .image-navigation {
+		max-width: 874px;
+        }
+.site:before,
+#secondary {
+		width: 0;
+		display: none;
+	    }
+.featured-content {
+		padding-left: 0;
+        }
+.site-content, .site-main .widecolumn {
+		margin-left: 0;
+        }
+.hentry {
+		max-width: 900px;
+        }
+.post-thumbnail img {
+		width: 100%;
+		}
+		
+		
+
+
+
+/*Contirbutor parts - About Us*/
+
+/**
+ * 6.10 Contributor Page
+ * -----------------------------------------------------------------------------
+ */
+
+
+.contributor {
+	border-bottom: none;
+	margin: 0px auto !important;
+	padding: 0px !important;
+}
+
+.contributor-avatar {
+	border: none;
+}
+.contributor-info {
+	margin: 20px auto !important;
+	padding: 0px 0px 40px 0px !important;
+	max-width: 100%;
+}
+
+
+.contributor-summary {
+	width: 80% !important;
+}
+
+.contributor-posts-link:before {
+	content:normal;
+}
+
